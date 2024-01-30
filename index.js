@@ -1,8 +1,8 @@
 // Node.js API route
 
-import express from "express"
-import {MongoClient} from "mongodb"
-import cors from "cors"
+const express = require('express');
+const { MongoClient } = require('mongodb');
+const cors = require('cors');
 
 
 const app = express();
@@ -42,5 +42,5 @@ app.post('/contact', async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('Hello, Server listening on port 3000');
+  console.log('Server listening on port 3000');
 });
