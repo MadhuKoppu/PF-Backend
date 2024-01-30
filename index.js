@@ -42,5 +42,5 @@ app.post('/contact', async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('Server listening on port 3000');
+  console.log('Hello, Server listening on port 3000');
 });
