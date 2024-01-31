@@ -13,7 +13,7 @@ app.use(cors());
 const MONGO_URI = 'mongodb+srv://madhukoppu10:madhukoppu10@cluster0.06nxwhe.mongodb.net/?retryWrites=true&w=majority';
 
 const client = new MongoClient(MONGO_URI);
-app.get('/', (req, res) => res.json("Welcome"));
+//app.get('/', (req, res) => res.json("Welcome"));
 app.post('/contact', async (req, res) => {
 
   try {
@@ -41,6 +41,6 @@ app.post('/contact', async (req, res) => {
 
 });
 
-app.listen(3000, '0.0.0.0', () => {
+app.listen(3000, () => {
   console.log('Server listening on port 3000');
 });
